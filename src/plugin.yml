@@ -1,0 +1,6 @@
+name: Grief WarFare
+version: 1
+main: net.dynamicjk.main.TntWars
+description: A Tnt based minigame by the AtomicCloudDevelopers purchase plugin on Spigot.
+commands:
+   game:

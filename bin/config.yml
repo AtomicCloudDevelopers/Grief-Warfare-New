@@ -1,0 +1,189 @@
+GameManager:
+   BungeeCord:
+     UseLobbyServer: false
+     LobbyServer: 'Hub'
+   Server:
+       LobbyTime: 10
+       GameTime: 800
+       RestartTime: 10
+       MinPlayers: 2
+       MaxPlayers: 6
+       MapName: '&cKingdoms'
+       kickIfFull: false
+       World: 'world'
+       IGNORETHIS: false
+       onWinForMYSQL:
+          UseCoins: false
+          CoinsOnWin: 200
+       Void:
+         Enabled: true
+         Y: -1
+       Shop:
+         Enabled: false
+         TierTwoUnlock: 10000
+         TierTwoTntExplosion: 7
+       LobbyItem:
+         Enabled: false
+       Tab:
+         Enabled: true
+   Kit:
+     Default:
+       Tnt: '&cTier 1 Tnt &e(Place me)'
+       Shop: '&6Shop &e(Right Click)'
+       LobbyItem: '&eReturn to lobby &6(Right click)'
+       TntExplosion: 5
+   Messages:
+       PlayerJoin: '%prefix% &a%player% &bhas joined the game &e(&6%onlinePlayers%/%maxPlayers%&e)'
+       PlayerQuit: '%prefix% &a%player% &bhas quit the game &e(&6%onlinePlayers%/%maxPlayers%&e)'
+       GameIsFull: '&cSorry but this game is full!'
+       prefix: '&e[&cGrief Warfare&e]'
+       UseMOTD: true
+       LobbyMOTD: '&aLobby'
+       LobbyStartMOTD: '&6Starting in &e%time% &6seconds'
+       InGameMOTD: '&cIn Game ending in &e%time% &6seconds'
+       RestartMOTD: '&4Restarting in &e%time% &4seconds'
+       WinKick: '&eGame Over &6%winner% &ewon with &6%block% &eblocks Destroyed'
+       Tab: '&a%player% &e- &6%block%'
+       Shop:
+          Name: '&cShop'
+          TierTwo: '&bTeir 2 Tnt'
+          TierTwoLore: '&cBlocks required: %blockreq%'
+          NotEnoughBlocks: '&cYou require more blocks to purchase this item! destory up more blocks!'
+          Unlock: '&aYou have unlocked this item!'
+       JoinMessage:
+        - ' '
+        - ' '
+        - '&aWelcome to the server %player%!'
+        - '&eCurrent minigame: &aGrief Warfare'
+       NotEnoughPlayers:
+        - ' '
+        - ' '
+        - '&cNot Enough players for game to start!'
+       GameStarting:
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - '&a========================================='
+        - '          &eThe game will begin in: &6%time% &eseconds'
+        - '&a========================================='
+       GameRestarting:
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - '&a========================================='
+        - '          &cServer restarting in: &6%time% &cseconds'
+        - '&a========================================='
+       GameIsEnding:
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - '&a========================================='
+        - '          &eThe game will end in: &6%time% &eseconds'
+        - '&a========================================='
+       GameHasEnded:
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - '&a========================================='
+        - '          &eSTOP the game has ended'
+        - '          &b&lWinner: &6&l%winner%'
+        - '          &c&lWith: %block% &c&lDestroyed'
+        - '&a========================================='
+       GameHasStarted:
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - ' '
+        - '&a========================================='
+        - '          &eThe game has started good luck!'
+        - '&a========================================='
+       Permission:
+        - ' '
+        - ' '
+        - '&4You do not have permission'
+        - '&cReport this to a staff member if you need help.'
+       Title:
+          JoinTitle:
+             Enabled: true
+             Title: '&cWelcome &6%player%'
+             subTitle: '&eto Grief Warfare!'
+          WinTitle:
+             Enabled: true
+             Title: '&eGame Over!'
+             subTitle: '%winner% wins the game with %block% destroyed'
+   Scoreboards:
+    Lobby:
+      ScoreTitle: '&6&lGrief Warfare'
+      0: ' '
+      1: '&aLobby Time: &f%time%'
+      2: '&r&o'
+      3: '&aOnline: &f %onlinePlayers%/%maxPlayers%'
+      4: '&a&o'
+      5: '&aMap: &f%map%'
+      6: '&c&l'
+      7: '&6server ip here'
+      8: '&4&l'
+    Game:
+      ScoreTitle: '&6&lGrief Warfare'
+      0: ' '
+      1: '&aGame Time: &f%time%'
+      2: '&r&o'
+      3: '&aOnline: &f %onlinePlayers%/%maxPlayers%'
+      4: '&a&o'
+      5: '&aMap: &f%map%'
+      6: '&c&l'
+      7: '&4Blocks Destroyed:'
+      8: '&b%block%'
+      9: '&6&l'
+      10: '&6server ip here'
+      11: '&8&l'
+   MySQL:
+     Enabled: false
+     Ip: 'localhost'
+     Database: 'database'
+     Username: 'root'
+     Password:  'password'
